@@ -21,9 +21,9 @@ The API calls were specifically used for Academy award-winning movies, which are
 
 When generating the dataset, three separate JSON output files are created:
 
-1. <academy_monthly_mobile_201507-202310.json> is a JSON file that contains monthly mobile pageviews for each article depicting an Academy Award-winning movie, from July 2015 through September 2023.
-2. <academy_monthly_desktop_201507-202310.json> is a JSON file that contains monthly desktop pageviews for each article depicting an Academy Award-winning movie.
-3. <academy_monthly_cumulative_201507-202310> is a JSON file that contains monthly cumulative pageviews for each article depicting an Academy Award-winning movie. That is, it is the sum of desktop and mobile views.
+1. [academy_monthly_mobile_201507-202310.json](academy_monthly_mobile_201507-202310.json) is a JSON file that contains monthly mobile pageviews for each article depicting an Academy Award-winning movie, from July 2015 through September 2023.
+2. [academy_monthly_desktop_201507-202310.json](academy_monthly_desktop_201507-202310.json) is a JSON file that contains monthly desktop pageviews for each article depicting an Academy Award-winning movie.
+3. [academy_monthly_cumulative_201507-202310](academy_monthly_cumulative_201507-202310.json) is a JSON file that contains monthly cumulative pageviews for each article depicting an Academy Award-winning movie. That is, it is the sum of desktop and mobile views.
 
 Each JSON file contains nested data pertaining to each movie. Each tag represents a movie, and for each movie, there are months of pageview counts for that particular movie article. Each of these individual months are structured in the same way, as a set of distinct tags. They include:
 - project: This represents the particular domain of the Wikimedia Project we used for our API call. In this case, we used 'en.wikipedia.org'
@@ -34,9 +34,9 @@ Each JSON file contains nested data pertaining to each movie. Each tag represent
 - views: This is the raw count of page views for that article in that particular month
 
 My analysis from this data outputs three image files in this repository as well:
-1. <MinMaxAvgViewership.png> is a PNG file of a plot produced using Matplotlib. The plot shows a time series for the articles with the highest average mobile traffic, highest average desktop traffic, lowest average mobile traffic, and lowest average desktop traffic.
-2. <PeakViewership.png> is another PNG file of a plot produced using Matplotlib. The plot shows a time series for the top 10 articles with the highest peak monthly page views, for both mobile and desktop access.
-2. <MostRecentWinners.png> is a PNG created through Matplotlib, and it shows a time series of the 10 articles with the fewest months of available data, for both mobile and desktop access.
+1. [MinMaxAvgViewership.png](MinMaxAvgViewership.png) is a PNG file of a plot produced using Matplotlib. The plot shows a time series for the articles with the highest average mobile traffic, highest average desktop traffic, lowest average mobile traffic, and lowest average desktop traffic.
+2. [PeakViewership.png](PeakViewership.png) is another PNG file of a plot produced using Matplotlib. The plot shows a time series for the top 10 articles with the highest peak monthly page views, for both mobile and desktop access.
+2. [MostRecentWinners.png](MostRecentWinners.png) is a PNG created through Matplotlib, and it shows a time series of the 10 articles with the fewest months of available data, for both mobile and desktop access.
 
 ## Special Considerations
 My Jupyter notebook version is 6.5.2, and it utilizes Python version 3.9.16. Make sure to check the version that you are running under to make sure that the functions are compatible.
